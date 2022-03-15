@@ -1,0 +1,234 @@
+@media screen and (min-width:750px) {
+    html {
+        font-size: 75px !important;
+    }
+}
+
+body {
+    max-width: 750px;
+    min-width: 320.0025px;
+    margin: 0 auto;
+    background-color: #F2F4F7;
+}
+
+a {
+    text-decoration: none;
+}
+
+img,
+h4 {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    height: 1.0667rem;
+    font-size: .4667rem;
+    text-align: center;
+    line-height: 1.0667rem;
+    background-color: #fff;
+    margin-bottom: .9975px;
+}
+
+.daohang {
+    background-color: #fff;
+    padding-bottom: .5733rem;
+
+
+    nav {
+        display: flex;
+        height: 6.96rem;
+        flex-wrap: wrap;
+
+        a {
+            flex: 33%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-size: .3333rem;
+            color: #707070;
+            justify-content: center;
+
+            img {
+                width: 1.8667rem;
+                height: 1.8667rem;
+            }
+        }
+    }
+
+    .go {
+
+        img {
+            width: 9.6267rem;
+            height: 2.0267rem;
+            margin-left: .24rem;
+        }
+    }
+}
+
+.content {
+    margin-top: .1333rem;
+    background-color: #fff;
+    padding: .5333rem .2933rem;
+
+    .content_hd {
+        display: flex;
+        justify-content: space-between;
+        height: .5067rem;
+        line-height: .5067rem;
+        margin-bottom: .4267rem;
+
+        h4 {
+            font-size: .3733rem;
+            color: #333333;
+
+            img {
+                float: left;
+                width: .5067rem;
+                height: .5067rem;
+                margin-right: .24rem;
+            }
+        }
+
+        a {
+            font-size: .2933rem;
+            color: #999999;
+        }
+    }
+}
+
+.get_job_focus {
+
+    position: relative;
+
+    .swiper-container {
+        height: 100%;
+        overflow: hidden;
+        width: 7.2rem;
+        margin: 0 auto;
+    }
+
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        flex-direction: column;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+        transition: 300ms;
+        transform: scale(0.8);
+        opacity: 0.3;
+
+        a {
+            p {
+                font-size: .3333rem;
+                white-space: nowrap;
+                margin-top: .2rem;
+                color: #333;
+            }
+
+            img {
+                height: 5.2rem;
+                width: 4.6667rem;
+            }
+        }
+    }
+
+    // 当前选中的slide 中间的
+    .swiper-slide-active,
+    .swiper-slide-duplicate-active {
+        transform: scale(1);
+        z-index: 999;
+        opacity: 1;
+    }
+}
+
+.study {
+    margin-bottom: 1.6rem;
+
+    .swiper {
+        width: 100%;
+        height: 100%;
+    }
+
+    .swiper-slide {
+        font-size: .24rem;
+        background: #fff;
+        height: 4.5333rem;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0 0 .1333rem rgba(0, 0, 0, .1);
+        margin: .1333rem;
+        padding: .1067rem;
+        border-radius: .0667rem;
+
+        img {
+            width: 100%;
+            border-radius: .0667rem;
+        }
+
+        .title {
+            margin: .2133rem .1067rem .3333rem;
+            font-size: .36rem;
+        }
+
+        .text {
+            font-size: .32rem;
+            color: #999999;
+
+            span {
+                color: #ff4400;
+            }
+        }
+    }
+}
+
+.footer {
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: 0;
+    height: 1.5067rem;
+    width: 100%;
+    display: flex;
+    max-width: 10rem;
+    min-width: 4.2667rem;
+    background-color: #fff;
+    z-index: 999;
+    justify-content: space-around;
+    border-top: 1px solid #e3e3e3;
+
+    a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: #666666;
+        font-size: .2933rem;
+
+        &:nth-child(1) {
+            color: #2CCAC7;
+        }
+
+        img {
+            width: .5333rem;
+            height: .5333rem;
+            margin-bottom: .1333rem;
+        }
+    }
+}
